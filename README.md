@@ -5,6 +5,8 @@ ___
 ![°](https://github.com/Ejected-Media/C500-Discord-Bot/blob/main/1763765281174.jpg "$")
 
 
+![°](https://github.com/Ejected-Media/C500-Discord-Bot/blob/main/1763759432372.jpg "$")
+
 Great! Integrating a Discord bot into the C500 ecosystem would be a powerful way to enhance community engagement, provide automated support, and bridge the platform's features directly into the student's and mentor's daily communication flow.
 Here's a breakdown of how we could integrate a Discord bot into the C500 ecosystem, focusing on its functionalities and interactions:
 C500 Discord Bot Integration: Enhancing the Ecosystem
