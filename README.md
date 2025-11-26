@@ -3,6 +3,10 @@
 
 ___
 
+![°](https://github.com/Ejected-Media/C500-Discord-Bot/blob/main/1764181580396.jpg "$")
+
+___
+
 
 ![°](https://github.com/Ejected-Media/C500-Discord-Bot/blob/main/1764180433601.jpg "$")
 
