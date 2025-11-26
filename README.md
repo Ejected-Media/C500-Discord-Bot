@@ -1,4 +1,11 @@
 # C500-Discord-Bot
+~
+
+___
+
+
+![°](https://github.com/Ejected-Media/C500-Discord-Bot/blob/main/1764180433601.jpg "$")
+
 
 ___
 
