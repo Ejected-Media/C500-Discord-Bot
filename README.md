@@ -10,6 +10,9 @@ ___
 ![°](https://github.com/Ejected-Media/C500-Discord-Bot/blob/main/1764178922979.jpg "$")
 
 ![°](https://github.com/Ejected-Media/C500-Discord-Bot/blob/main/1764178900279.jpg "$")
+
+![°](https://github.com/Ejected-Media/C500-Discord-Bot/blob/main/1764179611559.jpg "$")
+
 ___
 
 
