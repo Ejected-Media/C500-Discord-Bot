@@ -1,0 +1,21 @@
+{{ define "content" }}
+<div class="profile-container relative">
+
+    <div id="user-custom-canvas-host">
+        {{ .SafeCustomHTML }}
+    </div>
+
+    <style>
+        /* Scoped style injection placeholder */
+        {{ .SafeCustomCSS }}
+    </style>
+</div>
+
+<script>
+    const host = document.getElementById('user-custom-canvas-host');
+    const shadow = host.attachShadow({mode: 'open'});
+    // Move the raw HTML content inside the shadow root
+    shadow.innerHTML = host.innerHTML;
+    host.innerHTML = ''; // Clear the light DOM
+</script>
+{{ end }}
