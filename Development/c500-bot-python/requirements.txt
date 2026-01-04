@@ -1,0 +1,3 @@
+discord.py>=2.3.0  # The modern async Discord framework
+aiohttp            # For making async HTTP requests to the Go Core
+python-dotenv      # For loading .env files locally
