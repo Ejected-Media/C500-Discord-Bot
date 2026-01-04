@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .Title }} | C500 Collective</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    {{ block "extra_head" . }}{{ end }}
+</head>
+<body class="bg-pastel-cream text-gray-800 font-sans">
+    {{ template "partials/nav.html" . }}
+
+    <main class="container mx-auto min-h-screen py-8">
+        {{ template "content" . }}
+    </main>
+
+    {{ template "partials/footer.html" . }}
+</body>
+</html>
+</html>
