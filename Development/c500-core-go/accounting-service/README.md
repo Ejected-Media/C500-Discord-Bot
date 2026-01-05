@@ -7,3 +7,6 @@
 
 
 ![°](https://github.com/Ejected-Media/C500-Discord-Bot/blob/main/Development/c500-core-go/accounting-service/pics/1767655032926.jpg "$")
+
+
+![°](https://github.com/Ejected-Media/C500-Discord-Bot/blob/main/Development/c500-core-go/accounting-service/pics/1767655187330.jpg "$")
