@@ -1,0 +1,8 @@
+        <p class="seller-info">Sold by: {{.SellerID}}</p>
+
+        <form action="/create-checkout-session/{{.ID}}" method="POST">
+            <button type="submit" class="buy-now-btn">Buy Now with Stripe</button>
+        </form>
+    </div>
+</article>
+{{end}}
