@@ -1,0 +1,59 @@
+{{extends "base.html"}}
+
+{{define "title"}}{{ .Title }}{{end}}
+
+{{define "head_extra"}}
+<style>
+    .success-container {
+        text-align: center;
+        padding: 4rem 2rem;
+        background-color: #f0fff4; /* Light green background */
+        border: 1px solid #c6f6d5; /* Slightly darker green border */
+        border-radius: 8px;
+        margin-top: 2rem;
+    }
+
+    .success-icon {
+        font-size: 5rem;
+        color: #38a169; /* Nice green color */
+        margin-bottom: 1rem;
+    }
+
+    .success-container h1 {
+        margin-bottom: 1rem;
+        color: #2f855a;
+    }
+
+    .success-container p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        color: #4a5568;
+    }
+
+    /* Re-using button styles but making it behave like a link */
+    .btn-primary {
+        display: inline-block;
+        padding: 12px 30px;
+        background-color: var(--color-primary);
+        color: white;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: background-color 0.2s;
+    }
+    .btn-primary:hover {
+        background-color: #357abd;
+        text-decoration: none;
+    }
+</style>
+{{end}}
+
+{{define "content"}}
+<section class="success-container">
+    <div class="success-icon">✓</div>
+    <h1>Thank You for Your Order!</h1>
+    <p>Your payment has been processed successfully.</p>
+    <p>You will receive a confirmation email shortly.</p>
+    
+    <a href="/store" class="btn-primary">Continue Shopping</a>
+</section>
+{{end}}
