@@ -1,0 +1,27 @@
+{{extends "base.html"}}
+
+{{define "title"}}{{ .Title }}{{end}}
+
+{{define "content"}}
+<section>
+    <h1>Current Listings</h1>
+    <p class="intro">Browse items listed by our community members.</p>
+
+    <div class="product-grid">
+        {{range .Products}}
+        <article class="product-card">
+            <img src="{{.ImageURL}}" alt="{{.Name}}" class="product-image">
+            <div class="product-details">
+                <h2>{{.Name}}</h2>
+                <p class="price">{{.FormattedPrice}}</p>
+                <p class="description">{{.Description}}</p>
+                <p class="seller">Seller: {{.SellerID}}</p>
+                <button class="buy-button">View Details</button>
+            </div>
+        </article>
+        {{else}}
+            <p>No items currently listed.</p>
+        {{end}}
+    </div>
+</section>
+{{end}}
