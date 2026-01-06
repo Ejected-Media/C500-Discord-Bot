@@ -1,0 +1,25 @@
+{{extends "base.html"}}
+
+{{define "title"}}Admin & Mod Manual - c500-web-go{{end}}
+
+{{define "content"}}
+<article class="docs-content">
+    <h1>Admin & Moderator Manual</h1>
+    <p class="intro">Tools and workflows for administrators and moderators to manage content, resolve disputes, and ensure platform safety.</p>
+
+    <h2>The Admin Dashboard</h2>
+    <p>Moderation is primarily handled through a secured web dashboard that provides a high-level view of platform activity.</p>
+
+    <figure class="diagram-figure">
+        <img src="/static/images/admin-dashboard.png" alt="Diagram showing the Admin User accessing the Web Dashboard to interact with the API and Database.">
+        <figcaption>Figure 4: The moderator's workflow using the Admin Dashboard.</figcaption>
+    </figure>
+
+    <h3>Moderation Capabilities</h3>
+    <ul>
+        <li><strong>Flagged Listings Review:</strong> Review items flagged by users or automated systems for policy violations.</li>
+        <li><strong>User Reports:</strong> Investigate reports filed against buyers or sellers.</li>
+        <li><strong>Transaction Oversight:</strong> View details of specific transactions to assist with support inquiries.</li>
+    </ul>
+</article>
+{{end}}
