@@ -1,0 +1,90 @@
+{{extends "base.html"}}
+
+{{define "title"}}{{.Name}} - c500-web-go Store{{end}}
+
+{{define "head_extra"}}
+<style>
+    .product-detail-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        gap: 40px;
+        margin-top: 2rem;
+    }
+
+    /* Make grid single column on smaller screens */
+    @media (max-width: 768px) {
+        .product-detail-container { grid-template-columns: 1fr; }
+    }
+
+    .detail-image img {
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid var(--color-border);
+    }
+
+    .detail-info h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: var(--color-header-bg);
+    }
+
+    .detail-price {
+        font-size: 2rem;
+        color: var(--color-primary);
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+    }
+
+    .detail-description {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 2rem;
+        color: #555;
+    }
+
+    .seller-info {
+        margin-bottom: 2rem;
+        font-style: italic;
+        color: #777;
+    }
+
+    /* Re-using the buy-button style, but making it bigger */
+    .buy-now-btn {
+        display: inline-block;
+        padding: 15px 40px;
+        font-size: 1.2rem;
+        background-color: var(--color-primary);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+    .buy-now-btn:hover { background-color: #357abd; text-decoration: none; }
+    
+    .back-link { display: block; margin-bottom: 1rem; }
+</style>
+{{end}}
+
+{{define "content"}}
+<a href="/store" class="back-link">&larr; Back to Store</a>
+
+<article class="product-detail-container">
+    <div class="detail-image">
+        <img src="{{.ImageURL}}" alt="{{.Name}}">
+    </div>
+
+    <div class="detail-info">
+        <h1>{{.Name}}</h1>
+        <p class="detail-price">{{.FormattedPrice}}</p>
+        
+        <div class="detail-description">
+            <p>{{.Description}}</p>
+        </div>
+
+        <p class="seller-info">Sold by: {{.SellerID}}</p>
+
+        <a href="#" class="buy-now-btn">Buy Now</a>
+    </div>
+</article>
+{{end}}
