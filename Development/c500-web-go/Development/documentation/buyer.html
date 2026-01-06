@@ -1,0 +1,27 @@
+{{extends "base.html"}}
+
+{{define "title"}}Buyer's Manual - c500-web-go Docs{{end}}
+
+{{define "content"}}
+<article class="docs-content">
+    <h1>Buyer's Documentation Manual</h1>
+    <p class="intro">Welcome to the buyer's guide. This page outlines the simple, secure process of purchasing items through our Discord integration and web checkout system.</p>
+
+    <h2>The Purchase Workflow</h2>
+    <p>The buying process is designed to be seamless, taking you directly from a Discord notification to a secure payment page.</p>
+
+    <figure class="diagram-figure">
+        <img src="/static/images/buyer-flow.png" alt="Diagram illustrating the workflow from a Discord 'Buy Now' link to Stripe payment confirmation.">
+        <figcaption>Figure 1: Visual overview of the buyer purchase journey.</figcaption>
+    </figure>
+
+    <h3>Step-by-Step Guide</h3>
+    <ol>
+        <li><strong>Locate an Item:</strong> Find an item for sale in the designated Discord channel.</li>
+        <li><strong>Click "Buy Now":</strong> Click the link provided in the bot's message embed.</li>
+        <li><strong>Secure Checkout:</strong> You will be redirected to a secure c500-web-go checkout page in your browser. Review order details.</li>
+        <li><strong>Complete Payment:</strong> Click "Pay with Stripe" to finalize the transaction securely.</li>
+        <li><strong>Confirmation:</strong> You will receive an on-screen confirmation and a receipt via email.</li>
+    </ol>
+</article>
+{{end}}
