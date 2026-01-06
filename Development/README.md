@@ -1,5 +1,14 @@
 ~
 
+![°](https://github.com/Ejected-Media/C500-Discord-Bot/blob/main/Development/pics/1767656007759.jpg "$")
+
+![°](https://github.com/Ejected-Media/C500-Discord-Bot/blob/main/Development/pics/1767656976225.jpg "$")
+
+![°](https://github.com/Ejected-Media/C500-Discord-Bot/blob/main/Development/pics/1767657251874.jpg "$")
+
+
+
+
 ![°](https://github.com/Ejected-Media/C500-Discord-Bot/blob/main/Development/pics/1767656099424.jpg "$")
 
 ![°](https://github.com/Ejected-Media/C500-Discord-Bot/blob/main/Development/pics/1767656344485.jpg "$")
