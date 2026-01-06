@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "name": "DB Vintage Wumpus Plush",
+    "description": "From the database! A rare 2018 plushie.",
+    "price": 45,
+    "image_url": "https://placehold.co/600x400/png?text=DB+Wumpus",
+    "seller_id": "discord_user_123"
+  },
+  {
+    "id": 2,
+    "name": "DB Emoji Pack",
+    "description": "10 custom emojis stored in SQL.",
+    "price": 15.5,
+    "image_url": "https://placehold.co/600x400/png?text=DB+Emoji",
+    "seller_id": "artist_jane"
+  },
+  // ... etc ...
+]
