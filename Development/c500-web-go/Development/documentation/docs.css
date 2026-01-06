@@ -1,0 +1,86 @@
+/* c500-web-go/static/css/docs.css */
+
+/* --- Typography within documentation --- */
+.docs-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-border);
+    color: var(--color-header-bg);
+}
+
+.docs-content h2 {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-header-bg);
+}
+
+.docs-content p {
+    margin-bottom: 1.2rem;
+}
+
+.docs-content ul, .docs-content ol {
+    margin-bottom: 1.2rem;
+    padding-left: 2rem;
+}
+
+/* --- Diagram Styles (Figures) --- */
+
+/* The container for the image and caption */
+figure.diagram-figure {
+    margin: 2.5rem 0;
+    text-align: center;
+    background-color: #fafbfc; /* Slight contrast background for the diagram area */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+}
+
+/* The diagram image itself */
+figure.diagram-figure img {
+    max-width: 100%;   /* Ensures image never exceeds its container width */
+    height: auto;      /* Maintains aspect ratio */
+    display: block;    /* Removes bottom margin spacing issues */
+    margin: 0 auto;    /* Centers the image horizontally */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+    border-radius: 4px;
+}
+
+/* The caption below the image */
+figure.diagram-figure figcaption {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #666; /* Slightly lighter text for caption */
+    font-style: italic;
+}
+
+/* --- Navigation List on Hub Page --- */
+.docs-nav-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.docs-nav-list li a {
+    display: block;
+    padding: 20px;
+    background: var(--color-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.docs-nav-list li a:hover {
+    text-decoration: none;
+    background: #fff;
+    border-color: var(--color-primary);
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.15);
+    transform: translateY(-2px);
+}
