@@ -1,0 +1,59 @@
+{{extends "base.html"}}
+
+{{define "title"}}Welcome to c500-web-go{{end}}
+
+{{define "head_extra"}}
+<style>
+    .hero-section {
+        text-align: center;
+        padding: 4rem 2rem;
+        background: linear-gradient(135deg, var(--color-header-bg), var(--color-primary));
+        color: white;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+    }
+    .hero-section h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero-section p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto 2rem auto; }
+    .cta-button {
+        display: inline-block;
+        padding: 12px 30px;
+        background-color: white;
+        color: var(--color-primary);
+        font-weight: bold;
+        border-radius: 30px;
+        transition: transform 0.2s;
+    }
+    .cta-button:hover { transform: scale(1.05); text-decoration: none;}
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+    .feature-card { padding: 1.5rem; border: 1px solid var(--color-border); border-radius: 8px; }
+    .feature-card h3 { color: var(--color-primary); margin-bottom: 0.5rem; }
+</style>
+{{end}}
+
+{{define "content"}}
+<section class="hero-section">
+    <h1>Seamless Discord Commerce</h1>
+    <p>Connect your Discord community to a powerful web-based marketplace. Secure payments, automated role management, and easy listing controls.</p>
+    <a href="/docs/" class="cta-button">Read the Documentation</a>
+</section>
+
+<section class="features-grid">
+    <div class="feature-card">
+        <h3>For Sellers</h3>
+        <p>List items directly from Discord with simple commands. Manage inventory and track sales without leaving your server.</p>
+    </div>
+    <div class="feature-card">
+        <h3>For Buyers</h3>
+        <p>Click-to-buy instantly. Secure Stripe integration means your payment details are safe, and delivery is automated.</p>
+    </div>
+    <div class="feature-card">
+        <h3>For Communities</h3>
+        <p>Keep revenue within your ecosystem. Automate moderation and ensure a safe trading environment for all members.</p>
+    </div>
+</section>
+{{end}}
