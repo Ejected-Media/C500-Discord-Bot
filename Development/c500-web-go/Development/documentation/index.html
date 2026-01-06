@@ -1,0 +1,37 @@
+{{extends "base.html"}}
+
+{{define "title"}}Documentation Hub - c500-web-go{{end}}
+
+{{define "content"}}
+<section class="docs-hub">
+    <h1>c500-web-go Documentation</h1>
+    <p class="intro">Welcome to the official documentation hub. Select a guide below based on your role to get started.</p>
+
+    <ul class="docs-nav-list">
+        <li>
+            <a href="/docs/buyer">
+                <h3>Buyer's Manual</h3>
+                <p>Learn how to purchase items securely.</p>
+            </a>
+        </li>
+        <li>
+            <a href="/docs/seller">
+                <h3>Seller's Manual</h3>
+                <p>Manage listings and view sales history.</p>
+            </a>
+        </li>
+        <li>
+            <a href="/docs/developer">
+                <h3>Developer Docs</h3>
+                <p>Technical architecture and API overview.</p>
+            </a>
+        </li>
+        <li>
+            <a href="/docs/admin">
+                <h3>Admin & Mod Guide</h3>
+                <p>Tools for moderation and platform management.</p>
+            </a>
+        </li>
+    </ul>
+</section>
+{{end}}
