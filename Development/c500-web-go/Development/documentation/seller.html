@@ -1,0 +1,25 @@
+{{extends "base.html"}}
+
+{{define "title"}}Seller's Manual - c500-web-go Docs{{end}}
+
+{{define "content"}}
+<article class="docs-content">
+    <h1>Seller's Documentation Manual</h1>
+    <p class="intro">This guide explains how to list items, manage your inventory, and track sales using the c500-web-go Discord bot and web dashboard.</p>
+
+    <h2>Listing & Management Workflow</h2>
+    <p>Managing your listings is done primarily through simple Discord commands, which interact with our central database.</p>
+
+    <figure class="diagram-figure">
+        <img src="/static/images/seller-flow.png" alt="Diagram illustrating the seller's workflow using Discord commands to manage listings.">
+        <figcaption>Figure 2: The listing management process for sellers.</figcaption>
+    </figure>
+
+    <h3>Key Commands</h3>
+    <ul>
+        <li><strong>/list create:</strong> Start the process of adding a new item for sale. You will be prompted for details and images.</li>
+        <li><strong>/manage-listings:</strong> View a list of your active items. From here you can edit prices or mark items as out of stock.</li>
+        <li><strong>/sales-history:</strong> Get a DM report of your recent completed transactions.</li>
+    </ul>
+</article>
+{{end}}
