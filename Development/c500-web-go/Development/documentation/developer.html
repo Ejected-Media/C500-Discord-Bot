@@ -1,0 +1,26 @@
+{{extends "base.html"}}
+
+{{define "title"}}Developer Docs - c500-web-go{{end}}
+
+{{define "content"}}
+<article class="docs-content">
+    <h1>Developer's Documentation</h1>
+    <p class="intro">A technical overview of the c500-web-go architecture, intended for contributors and integrators.</p>
+
+    <h2>System Architecture</h2>
+    <p>The system is built around a central Go API that manages data consistency between the Discord bot interface and the web payment integration.</p>
+
+    <figure class="diagram-figure">
+        <img src="/static/images/developer-arch.png" alt="Technical diagram showing the connection between the Go API, PostgreSQL database, Python Discord Bot, and Stripe API.">
+        <figcaption>Figure 3: High-level system architecture and component interaction.</figcaption>
+    </figure>
+
+    <h3>Core Components</h3>
+    <ul>
+        <li><strong>c500-web-go API (Go):</strong> The RESTful backend service. It handles business logic, database transactions, and serves the frontend application.</li>
+        <li><strong>PostgreSQL DB:</strong> The source of truth for users, listings, and order data.</li>
+        <li><strong>Discord Bot (Python):</strong> Handles user interactions within Discord, forwarding commands to the Go API.</li>
+        <li><strong>Stripe API:</strong> External payment processing used for secure checkout sessions.</li>
+    </ul>
+</article>
+{{end}}
