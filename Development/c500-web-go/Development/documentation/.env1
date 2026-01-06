@@ -1,0 +1,11 @@
+# c500-web-go/.env
+
+# ... existing Stripe keys ...
+STRIPE_PUBLISHABLE_KEY=...
+STRIPE_SECRET_KEY=...
+DOMAIN=http://localhost:8080
+
+# Database Connection Info
+# Format: postgres://username:password@host:port/database_name?sslmode=disable
+# Example for default local setup:
+DATABASE_URL=postgres://postgres:password@localhost:5432/c500_ecommerce?sslmode=disable
