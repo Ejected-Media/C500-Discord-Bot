@@ -1,5 +1,7 @@
 ~
 
+![°](https://github.com/Ejected-Media/C500-Discord-Bot/blob/main/Development/c500-core-go/pics/1767787553951.jpg "$")
+
 ![°](https://github.com/Ejected-Media/C500-Discord-Bot/blob/main/Development/c500-core-go/pics/1767787366441.jpg "$")
 
 ![°](https://github.com/Ejected-Media/C500-Discord-Bot/blob/main/Development/c500-core-go/pics/1767787130336.jpg "$")
