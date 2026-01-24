@@ -7,8 +7,11 @@ Its job is to:
  * Return the processed results back to the Handler.
 By creating this file, you move the responsibility of talking to the database out of the handlers, making your code cleaner and easier to test.
 Here is the source code for c500-web-go/services/drop_service.go.
+
 New File: c500-web-go/services/drop_service.go
 You will need to create a new folder named services first.
+
+```
 package services
 
 import (
@@ -91,8 +94,11 @@ func (s *dropServiceImpl) GetDropDetails(id int) (*models.Product, error) {
 	return product, nil
 }
 
-How this fits into the bigger picture (Next Steps):
+```
+
+How this fits into the bigger picture (Next Steps): 
 Now that you have this service layer file, the next logical step is to refactor main.go and your handlers to use it.
+
 Instead of injecting *models.ProductModel directly into your handlers, you will inject services.DropService.
 Example of future change in main.go:
 // In main.go (Mental map for next steps)
