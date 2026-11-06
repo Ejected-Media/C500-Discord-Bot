@@ -1,0 +1,8 @@
+User types `!findmentor [topic]` 
+       │
+       ▼
+GloxBot validates input & checks C500 database / cache
+       │
+       ├──► If match found: Returns rich embed with available mentors, active status, & booking links
+       │
+       └──► If no specific topic or no mentors online: Directs user to the C500 Mentor Directory hub
