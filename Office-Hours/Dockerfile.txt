@@ -1,0 +1,33 @@
+# Stage 1: Build the Go binary
+FROM golang:1.22-alpine AS builder
+
+# Install required build tools and CA certificates
+RUN apk add --no-cache git ca-certificates tzdata
+
+WORKDIR /app
+
+# Cache dependencies
+COPY go.mod go.sum ./
+RUN go mod download
+
+# Copy source code
+COPY . .
+
+# Build a statically linked Go binary
+RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-s -w" -o /app/bin/timesync-server ./cmd/server/main.go
+
+# Stage 2: Minimal runtime image
+FROM alpine:3.20
+
+RUN apk add --no-cache ca-certificates tzdata
+
+WORKDIR /root/
+
+# Copy the compiled binary from the builder stage
+COPY --from=builder /app/bin/timesync-server .
+
+# Expose port for Cloud Run / App Engine
+EXPOSE 8080
+
+# Run the binary
+CMD ["./timesync-server"]
