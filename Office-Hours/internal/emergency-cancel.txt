@@ -1,0 +1,11 @@
+Admin triggers `/emergency-cancel [booking_id] [reason]`
+       │
+       ▼
+GloxBot validates admin permissions & fetches active booking
+       │
+       ├──► If valid: Opens atomic Firestore transaction
+       │      ├── Update booking status: `confirmed` -> `cancelled_admin`
+       │      ├── Log admin audit metadata (Admin ID, timestamp, reason)
+       │      └── Release mentor slot availability
+       │
+       └──► Dispatches priority Discord broadcast to notification channel & direct pings
