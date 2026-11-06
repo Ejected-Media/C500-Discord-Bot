@@ -1,0 +1,18 @@
+c500-timesync-backend/
+├── cmd/
+│   └── server/
+│       └── main.go          # Application entry point and server router setup
+├── internal/
+│   ├── database/
+│   │   └── firestore.go     # Firebase Firestore client initialization
+│   ├── handlers/
+│   │   ├── admin.go         # /admin/emergency-cancel protocol handler
+│   │   ├── booking.go       # Booking creation and transaction handler
+│   │   └── reminders.go     # Cloud Scheduler smart reminder job handler
+│   └── models/
+│       └── booking.go       # Shared struct definitions (BookingRequest, Mentor, etc.)
+├── .env.example             # Environment variable template
+├── go.mod                   # Go module dependencies
+├── go.sum                   # Dependency checksums
+└── Dockerfile               # Multi-stage container build specification
+---
